@@ -3,8 +3,8 @@
 
 #Path to your oh-my-zsh installation.
 #if [[ $(uname) == Darwin ]]; then 
-	export ZSH="/Users/michaeldries/.oh-my-zsh"
-	export PATH=/opt/homebrew/Cellar/inetutils/libexec/gnubin:/opt/homebrew/bin:/usr/local/sbin/:$PATH
+	export ZSH="~/.oh-my-zsh"
+#	export PATH=/opt/homebrew/Cellar/inetutils/libexec/gnubin:/opt/homebrew/bin:/usr/local/sbin/:$PATH
 export TERM="xterm-256color" CLICOLOR=1 LS_COLORS=bbfxcxdxbxegedabagacad
 
 #	export LS_COLORS="$(vivid generate ayu)"
