@@ -130,7 +130,9 @@ alias desk="cd ~/Desktop"
 alias down="cd ~/Downloads"
 alias dir="dirs -v"
 #alias -g ls="ls -al -H --color=always"
-alias -g ls="ls -alhG "
+#alias -g ls="ls -alhG "
+alias ls="eza -l" 
+alias la="eza -al" 
 
 #Disk tools
 alias usage='du -h -d 1 $PWD'
