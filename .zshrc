@@ -174,7 +174,7 @@ function quit(){
 	git add .vimrc
 	git push
 	git commit -m " none " 
-	echo $date
+	echo $(date +%d.%m.%y-%H:%M:%S)	
 #	exit
 
 
