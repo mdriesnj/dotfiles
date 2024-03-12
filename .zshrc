@@ -97,7 +97,7 @@ plugins=(
 ZSH_COLORIZE_CHROMA_FORMATTER=terminal256
 
 source $ZSH/oh-my-zsh.sh
-#source $HOME/dotfiles/essembeh.zsh-theme
+
 # User configuration
 
 # export MANPATH="/usr/local/man:$MANPATH"
@@ -214,6 +214,8 @@ function zsh_essembeh_gitstatus {
 # by default, use green for user@host and no prefix
 local ZSH_ESSEMBEH_COLOR="green"
 local ZSH_ESSEMBEH_PREFIX=""
+#ZSH_ESSEMBEH_COLOR="green"
+#ZSH_ESSEMBEH_PREFIX=""
 if [[ -n "$SSH_CONNECTION" ]]; then
     # display the source address if connected via ssh
     ZSH_ESSEMBEH_PREFIX="%{$fg[yellow]%}[$(echo $SSH_CONNECTION | awk '{print $1}')]%{$reset_color%} "
