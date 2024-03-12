@@ -168,13 +168,13 @@ alias ze="vi ~/.zshrc"
 alias -s pac=bbedit
 alias -s pem=bbedit
 
-function quit(){
+function exit(){
 	cd ~/dotfiles
 	git add .zshrc
 	git add .vimrc
 	git push
 	git commit -m "$(date +%m.%d.%y-%H:%M:%S)"
-#	exit
+	logout
 
 
 }
