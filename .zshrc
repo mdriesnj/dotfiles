@@ -1,6 +1,6 @@
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
-#test 2:15pm
+#test 2:16pm
 # Path to your oh-my-zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
 
@@ -174,7 +174,7 @@ function exit(){
 	git add .vimrc
 	git push
 	git commit -m "$(date +%m.%d.%y-%H:%M:%S)"
-#	logout
+	logout
 
 
 }
