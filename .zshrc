@@ -43,7 +43,7 @@ export ZSH="$HOME/.oh-my-zsh"
 # DISABLE_AUTO_TITLE="true"
 
 # Uncomment the following line to enable command auto-correction.
- ENABLE_CORRECTION="true"
+# ENABLE_CORRECTION="true"
 
 # Uncomment the following line to display red dots whilst waiting for completion.
 # You can also set it to another string to have that shown instead of the default red dots.
@@ -73,19 +73,19 @@ export ZSH="$HOME/.oh-my-zsh"
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(
-		aliases
+#		aliases
 		colored-man-pages
 		colorize
 		command-not-found 
-		common-aliases
-		copyfile
-		copypath
-		dirhistory
-		extract
-		eza
-		fancy-ctrl-z
-		fig
-		fzf
+#		common-aliases
+#		copyfile
+#		copypath
+#		dirhistory
+#		extract
+#		eza
+#		fancy-ctrl-z
+#		fig
+#		fzf
 		git		
 		jsontools
 		nmap
@@ -97,7 +97,7 @@ plugins=(
 ZSH_COLORIZE_CHROMA_FORMATTER=terminal256
 
 source $ZSH/oh-my-zsh.sh
-
+#source $HOME/dotfiles/essembeh.zsh-theme
 # User configuration
 
 # export MANPATH="/usr/local/man:$MANPATH"
@@ -137,6 +137,9 @@ alias la="eza -al"
 #Disk tools
 alias usage='du -h -d 1 $PWD'
 
+#Test
+#alias quit='cd ~/dotfiles && git commit -m "exit" && git push && exit' 
+
 #Docker
 alias dps="docker ps" 
 alias dcup="docker-compose up"
@@ -165,7 +168,16 @@ alias ze="vi ~/.zshrc"
 alias -s pac=bbedit
 alias -s pem=bbedit
 
+function quit(){
+	cd ~/dotfiles
+	git add .zshrc
+	git add .vimrc
+	git push
+	git commit -m " none " 
+	exit
 
+
+}
 
 
 
