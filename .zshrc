@@ -173,7 +173,7 @@ function quit(){
 	git add .zshrc
 	git add .vimrc
 	git push
-	git commit -m "$(date +%d.%m.%y-%H:%M:%S)"
+	git commit -m "$(date +%m.%d.%y-%H:%M:%S)"
 #	exit
 
 
