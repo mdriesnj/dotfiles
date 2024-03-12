@@ -174,7 +174,8 @@ function quit(){
 	git add .vimrc
 	git push
 	git commit -m " none " 
-	exit
+	echo "$date"
+#	exit
 
 
 }
