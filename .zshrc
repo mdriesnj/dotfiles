@@ -174,7 +174,7 @@ function exit(){
 	git add .vimrc
 	git push
 	git commit -m "$(date +%m.%d.%y-%H:%M:%S)"
-	logout
+#	logout
 
 
 }
