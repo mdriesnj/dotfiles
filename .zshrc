@@ -139,6 +139,8 @@ alias usage='du -h -d 1 $PWD'
 
 #Test
 #alias quit='cd ~/dotfiles && git commit -m "exit" && git push && exit' 
+#Clear DNS
+alias cleardns="sudo dscacheutil -flushcache; sudo killall -HUP mDNSResponder"
 
 #Docker
 alias dps="docker ps" 
