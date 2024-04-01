@@ -134,6 +134,7 @@ alias dir="dirs -v"
 alias ls="eza -l" 
 alias la="eza -al" 
 
+
 alias btop="btop --utf-force"
 
 #Disk tools
@@ -245,3 +246,10 @@ git pull
 cd ~
 
 neofetch
+
+if (( $+commands[apt-get] )); then
+  alias bat='batcat'
+#elif (( $+commands[pkg_add] )); then
+#  alias pi='sudo pacman -S'
+fi
+
