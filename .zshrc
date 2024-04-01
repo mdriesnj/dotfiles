@@ -131,9 +131,9 @@ alias down="cd ~/Downloads"
 alias dir="dirs -v"
 #alias -g ls="ls -al -H --color=always"
 #alias -g ls="ls -alhG "
-alias ls="eza -olg" 
-alias la="eza -aolg" 
-alias lnew="eza -rolgs new"
+alias ls="eza -olgh" 
+alias la="eza -aolgh" 
+alias lnew="eza -rolhgs new"
 
 
 alias btop="btop --utf-force"
