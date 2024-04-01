@@ -141,6 +141,7 @@ alias usage='du -h -d 1 $PWD'
 #alias quit='cd ~/dotfiles && git commit -m "exit" && git push && exit' 
 #Clear DNS
 alias cleardns="sudo dscacheutil -flushcache; sudo killall -HUP mDNSResponder"
+alias tailscale="/Applications/Tailscale.app/Contents/MacOS/Tailscale"
 
 #Docker
 alias dps="docker ps" 
@@ -236,3 +237,6 @@ PROMPT='${ZSH_ESSEMBEH_PREFIX}%{$fg[$ZSH_ESSEMBEH_COLOR]%}%n@%M%{$reset_color%}:
 $) '
 RPROMPT="%(?..%{$fg[red]%}%?%{$reset_color%})"
 
+#============== auto run
+git clone https://github.com/mdriesnj/dotfiles
+neofetch
