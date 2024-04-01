@@ -131,8 +131,9 @@ alias down="cd ~/Downloads"
 alias dir="dirs -v"
 #alias -g ls="ls -al -H --color=always"
 #alias -g ls="ls -alhG "
-alias ls="eza -ol" 
-alias la="eza -aol" 
+alias ls="eza -olg" 
+alias la="eza -aolg" 
+alias lnew="eza -rolgs new"
 
 
 alias btop="btop --utf-force"
@@ -169,6 +170,9 @@ alias sc-reload="sudo systemctl daemon-reload"
 #ZSH
 alias zr="source ~/.zshrc"
 alias ze="vi ~/.zshrc"
+
+alias vi"nvim"
+
 
 #Suffix aliases
 alias -s pac=bbedit
