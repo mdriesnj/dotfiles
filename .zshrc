@@ -134,6 +134,8 @@ alias dir="dirs -v"
 alias ls="eza -l" 
 alias la="eza -al" 
 
+alias btop="btop --utf-force"
+
 #Disk tools
 alias usage='du -h -d 1 $PWD'
 
@@ -238,5 +240,8 @@ $) '
 RPROMPT="%(?..%{$fg[red]%}%?%{$reset_color%})"
 
 #============== auto run
-git clone https://github.com/mdriesnj/dotfiles
+cd ~/dotfiles
+git pull
+cd ~
+
 neofetch
