@@ -171,7 +171,7 @@ alias sc-reload="sudo systemctl daemon-reload"
 alias zr="source ~/.zshrc"
 alias ze="vi ~/.zshrc"
 
-alias vi"nvim"
+alias vi="nvim"
 
 
 #Suffix aliases
