@@ -257,3 +257,7 @@ if (( $+commands[apt-get] )); then
 #  alias pi='sudo pacman -S'
 fi
 
+if (( $+commands[pkg_add] )); then
+  alias ls="ls -lh"
+  alias la="ls -alh"
+fi
