@@ -1,2 +1,2 @@
-require("mdries.core")
-require("mdries.lazy")
+require("mdries")
+print("hello")
