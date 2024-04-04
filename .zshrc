@@ -245,9 +245,9 @@ $) '
 RPROMPT="%(?..%{$fg[red]%}%?%{$reset_color%})"
 
 #============== auto run
-cd ~/dotfiles
-git pull
-cd ~
+#cd ~/dotfiles
+#git pull
+#cd ~
 
 neofetch
 
