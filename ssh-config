@@ -25,6 +25,11 @@ host plex plex.digitaldiscord.net 192.168.4.4
         user mdries
         IdentityFile ~/.ssh/mdries2023.key
 
+host jellyfin jelly jellyfin.digitaldiscord.net 192.168.4.10
+	hostname 192.168.4.10
+	user mdries
+	IdentityFile ~/.ssh/mdries2023.key
+
 host midlandpve midlandpve.digitaldiscord.net 192.168.7.1
         hostname 192.168.7.1
         user mdries 
